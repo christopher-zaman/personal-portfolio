@@ -26,6 +26,11 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- pricing table css above-->
+
+  <link rel="stylesheet" href="css/default.css">
+  <script src="js/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   <div class="site-wrap">
@@ -64,55 +69,24 @@
             <br>
             <br>
             <br>
-            <h2 class="heading mb-3 text-center arima">Welcome! <span class="text-success arima"></span></h2>
+            <h2 class="heading mb-3 text-center arima">Welcome!<br> Checkout my<br> Resume <br> Website portfolio and <br> Coding projects! <span class="text-success arima"></span></h2>
           </div>
         </div>
       </div>
     </div>
   </div>
 <!--Home Section Ends-->
-<!--Get More Info begins-->
-    <div class="site-section blue-gradient" id="services-section">
+<!--Coding Projects begins-->
+    <div class="site-section" id="services-section">
       <div class="container">
         <div class="row justify-content-center mb-5" data-aos="fade-left">
           <div class="col-md-8 section-heading">
-            <h2 class="heading mb-3 gradient-text arima text-center">Get More Info</h2>
-            <!--Form One Form 1-->
-            <form name="submit-to-google-sheet" id="form-one" class="text-white border-gradient-purple" method="post" data-aos="fade">
-              <div class="form-group row">
-                <div class="col-md-4 mb-3 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="Name" name="name">
-                </div>
-                <div class="col-md-4 mb-3 mb-lg-0">
-                  <input type="email" class="form-control" placeholder="Email" name="email">
-                </div>
-                <div class="col-md-4">
-                  <input type="text" class="form-control"placeholder="Phone" name="phone">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <textarea name="message" class="form-control" cols="30" rows="5"
-                    placeholder="Write your message here."></textarea>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-6">
-                  <input name="submit" type="submit" class="btn btn-outline-get-more-info py-3 px-5 btn-block" value="Send Message">
-                </div>
-              </div>
-            </form>
-            <script>
-              const scriptURL = 'https://script.google.com/macros/s/AKfycbzOhW_roQ-26sdn2hUxvMRo0GCsxSodq2aSS2WTnsu0P1rXrGiQ/exec'
-              const form = document.forms['submit-to-google-sheet']
-              form.addEventListener('submit', e => {
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                  .then(response => console.log('Success!', response))
-                  .catch(error => console.error('Error!', error.message))
-              document.forms['form-one'].reset()
-              })
-          </script>
+            <h2 class="heading mb-3 gradient-text arima text-center">Coding Projects</h2>
+            <pre>
+ <code class="javascript">
+   var test; alert(1+1);
+ </code>
+</pre>
           </div>
         </div>
       </div>
